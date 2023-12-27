@@ -1,0 +1,156 @@
+https://tailwindcss.com/docs/guides/vite#react
+npm create vite@latest my-project -- --template react
+npm install
+npm run dev
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+npm run dev
+https://fonts.google.com/specimen/Inter
+npm i react-scroll
+https://www.npmjs.com/package/react-icons
+npm install react-icons --save
+https://www.flowbite-react.com/docs/getting-started/introduction
+npm i flowbite-react
+https://www.flowbite-react.com/docs/getting-started/introduction
+'node_modules/flowbite-react/lib/esm/**/*.js',
+require('flowbite/plugin')
+
+https://www.flowbite-react.com/docs/components/carousel
+
+'use client';
+
+import { Carousel } from 'flowbite-react';
+
+function Component() {
+  return (
+    <div className="h-56 sm:h-64 xl:h-80 2xl:h-96">
+      <Carousel>
+        <div className="flex h-full items-center justify-center bg-gray-400 dark:bg-gray-700 dark:text-white">
+          Slide 1
+        </div>
+        <div className="flex h-full items-center justify-center bg-gray-400 dark:bg-gray-700 dark:text-white">
+          Slide 2
+        </div>
+        <div className="flex h-full items-center justify-center bg-gray-400 dark:bg-gray-700 dark:text-white">
+          Slide 3
+        </div>
+      </Carousel>
+    </div>
+  );
+}
+
+
+https://www.flowbite-react.com/docs/components/footer
+
+
+'use client';
+
+import { Footer } from 'flowbite-react';
+import { BsDribbble, BsFacebook, BsGithub, BsInstagram, BsTwitter } from 'react-icons/bs';
+
+function Component() {
+  return (
+    <Footer container>
+      <div className="w-full">
+        <div className="grid w-full justify-between sm:flex sm:justify-between md:flex md:grid-cols-1">
+          <div>
+            <Footer.Brand
+              href="https://flowbite.com"
+              src="https://flowbite.com/docs/images/logo.svg"
+              alt="Flowbite Logo"
+              name="Flowbite"
+            />
+          </div>
+          <div className="grid grid-cols-2 gap-8 sm:mt-4 sm:grid-cols-3 sm:gap-6">
+            <div>
+              <Footer.Title title="about" />
+              <Footer.LinkGroup col>
+                <Footer.Link href="#">Flowbite</Footer.Link>
+                <Footer.Link href="#">Tailwind CSS</Footer.Link>
+              </Footer.LinkGroup>
+            </div>
+            <div>
+              <Footer.Title title="Follow us" />
+              <Footer.LinkGroup col>
+                <Footer.Link href="#">Github</Footer.Link>
+                <Footer.Link href="#">Discord</Footer.Link>
+              </Footer.LinkGroup>
+            </div>
+            <div>
+              <Footer.Title title="Legal" />
+              <Footer.LinkGroup col>
+                <Footer.Link href="#">Privacy Policy</Footer.Link>
+                <Footer.Link href="#">Terms &amp; Conditions</Footer.Link>
+              </Footer.LinkGroup>
+            </div>
+          </div>
+        </div>
+        <Footer.Divider />
+        <div className="w-full sm:flex sm:items-center sm:justify-between">
+          <Footer.Copyright href="#" by="Flowbite™" year={2022} />
+          <div className="mt-4 flex space-x-6 sm:mt-0 sm:justify-center">
+            <Footer.Icon href="#" icon={BsFacebook} />
+            <Footer.Icon href="#" icon={BsInstagram} />
+            <Footer.Icon href="#" icon={BsTwitter} />
+            <Footer.Icon href="#" icon={BsGithub} />
+            <Footer.Icon href="#" icon={BsDribbble} />
+          </div>
+        </div>
+      </div>
+    </Footer>
+  );
+}
+
+
+npm run dev
+
+https://www.npmjs.com/package/framer-motion
+npm i framer-motion
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
