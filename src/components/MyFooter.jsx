@@ -9,6 +9,10 @@ import {
   BsMailbox2,
   BsTwitter,
 } from "react-icons/bs";
+<<<<<<< HEAD
+=======
+import { SiMinutemailer } from "react-icons/si";
+>>>>>>> d7a3a5629e14bf2e1f4b29afb04089eb0dd5b17a
 import logo from "../assets/icono-footer.png";
 
 const MyFooter = () => {

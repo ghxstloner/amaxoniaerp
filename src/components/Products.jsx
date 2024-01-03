@@ -71,10 +71,17 @@ const Products = () => {
         </div>
       </div>
       {/* AQUI QUIERO PONER LAS CARDS*/}
+<<<<<<< HEAD
       <div className="px-4 lg:px-14 max-w-screen-3xl mx-auto bg-neutralSilver py-16">
         <div className="text-center">
           <h2 className="text-4xl text-brandPrimary font-semibold mb-3">
             ¿Por qué somos la mejor opción?
+=======
+      <div className="px-4 lg:px-14 max-w-screen-3xl mx-auto bg-neutralSilver py-16 ">
+        <div className="text-center">
+          <h2 className="text-4xl text-brandPrimary font-semibold mb-3 ">
+            ¿Por qué somos mejor opción?
+>>>>>>> d7a3a5629e14bf2e1f4b29afb04089eb0dd5b17a
           </h2>
           <a className="text-3xl text-neutralDGrey font-semibold">
             Los beneficios de escogernos como Software
@@ -90,7 +97,11 @@ const Products = () => {
           {products.map((products) => (
             <div
               key={products.id}
+<<<<<<< HEAD
               className={`flex flex-col items-start justify-between px-4 py-8 text-left md:w-[300px] mx-auto md:h-75 rounded-md shadow cursor-pointer border-t-4 border-brandPrimary hover:-translate-y-5 hover:border-t-4 hover:border-black transition-all duration-300 h-full bg-[#FFFFFF]`}
+=======
+              className={`flex flex-col items-start justify-between px-4 py-8 text-left md:w-[300px] mx-auto md:h-75 rounded-md shadow cursor-pointer border-t-4 border-${products.color} hover:-translate-y-5 hover:border-t-4 hover:border-brandPrimary transition-all duration-300 h-full bg-[#FFFFFF]`}
+>>>>>>> d7a3a5629e14bf2e1f4b29afb04089eb0dd5b17a
             >
               <div>
                 <div className="mb-4 h-14 w-14 mx-auto rounded-tl-3xl rounded-br-3xl">
