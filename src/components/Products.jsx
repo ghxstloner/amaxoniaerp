@@ -85,12 +85,12 @@ const Products = () => {
           initial="hidden"
           whileInView={"show"}
           viewport={{ once: false, amount: 0.5 }}
-          className="mt-14 grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 md:w-11/12 mx-auto gap-8 " // Cambia "gap-12" por "gap-8"
+          className="mt-14 grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 md:w-11/12 mx-auto gap-12 " // Cambia "gap-12" por "gap-8"
         >
           {products.map((products) => (
             <div
               key={products.id}
-              className={`flex flex-col items-start justify-between px-4 py-8 text-left md:w-[300px] mx-auto md:h-75 rounded-md shadow cursor-pointer border-t-4 border-${products.color} hover:-translate-y-5 hover:border-t-4 hover:border-brandPrimary transition-all duration-300 h-full bg-[#FFFFFF]`}
+              className={`flex flex-col items-start justify-between px-4 py-8 text-left md:w-[300px] mx-auto md:h-75 rounded-md shadow cursor-pointer border-t-4 border-brandPrimary hover:-translate-y-5 hover:border-t-4 hover:border-gray-50 transition-all duration-300 h-full bg-[#FFFFFF]`}
             >
               <div>
                 <div className="mb-4 h-14 w-14 mx-auto rounded-tl-3xl rounded-br-3xl">

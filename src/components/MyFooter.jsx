@@ -1,15 +1,7 @@
 import React from "react";
 import { Footer, Label, TextInput } from "flowbite-react";
 import { HiMail } from "react-icons/hi";
-import {
-  BsFacebook,
-  BsGithub,
-  BsInstagram,
-  BsMailbox,
-  BsMailbox2,
-  BsTwitter,
-} from "react-icons/bs";
-import { SiMinutemailer } from "react-icons/si";
+import { BsFacebook, BsGithub, BsInstagram, BsTwitter } from "react-icons/bs";
 import logo from "../assets/icono-footer.png";
 
 const MyFooter = () => {
@@ -30,7 +22,7 @@ const MyFooter = () => {
               <span className="font-mbf-canno ">Amaxonia ERP</span>
             </a>
             <div className="my-8">
-              <p className="mb-1"> Copyright © 2023 Amaxonia ERP.</p>
+              <p className="mb-1"> Copyright © 2024 Amaxonia ERP.</p>
               <p>Todos los derechos reservados</p>
             </div>
 
