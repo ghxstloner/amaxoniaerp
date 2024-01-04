@@ -7,6 +7,12 @@ export default {
     "node_modules/flowbite-react/lib/esm/**/*.js",
   ],
   theme: {
+    screens: {
+      sm: '400px',
+      md: '768px',
+      lg: '976px',
+      xl: '1440px',
+    },
     extend: {
       fontFamily: {
         "mbf-canno": ["mbf-canno", "sans-serif"],
