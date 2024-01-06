@@ -4,6 +4,21 @@ import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
 ("../variants.js");
 
+const getBorderColor = (color) => {
+  switch (color) {
+    case "brandPrimary":
+      return "border-brandPrimary";
+    case "redCard":
+      return "border-redCard";
+    case "yellowCard":
+      return "border-yellowCard";
+    case "greenCard":
+      return "border-greenCard";
+    default:
+      return "border-gray-500"; // Si el color no coincide, se asigna un valor predeterminado
+  }
+};
+
 const Products = () => {
   const products = [
     {
@@ -81,27 +96,29 @@ const Products = () => {
           </a>
         </div>
         <motion.div
-          variants={fadeIn("right", 0.4)}
+          variants={fadeIn("center", 0.4)}
           initial="hidden"
           whileInView={"show"}
           viewport={{ once: false, amount: 0.5 }}
-          className="mt-14 grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 md:w-11/12 mx-auto gap-12 " // Cambia "gap-12" por "gap-8"
+          className="mt-14 grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 md:w-12/12 mx-auto gap-12 " // Cambia "gap-12" por "gap-8"
         >
-          {products.map((products) => (
+          {products.map((product) => (
             <div
-              key={products.id}
-              className={`flex flex-col items-start justify-between px-4 py-8 text-left md:w-[300px] mx-auto md:h-75 rounded-md shadow cursor-pointer border-t-4 border-brandPrimary hover:-translate-y-5 hover:border-t-4 hover:border-gray-50 transition-all duration-300 h-full bg-[#FFFFFF]`}
+              key={product.id}
+              className={`flex flex-col items-start justify-between px-4 py-8 text-left md:w-[300px] mx-auto md:h-75 rounded-md shadow cursor-pointer border-t-4 ${getBorderColor(
+                product.color
+              )} hover:-translate-y-5 hover:border-t-4 hover:border-gray-50 transition-all duration-300 h-full bg-[#FFFFFF]`}
             >
               <div>
                 <div className="mb-4 h-14 w-14 mx-auto rounded-tl-3xl rounded-br-3xl">
-                  <img src={products.image} alt="" className="-ml-24" />
+                  <img src={product.image} alt="" className="-ml-24" />
                 </div>
 
                 <h4 className="text-1xl font-bold text-black mb-2 px-2 ">
-                  {products.title}
+                  {product.title}
                 </h4>
                 <p className="text-sm text-neutralGrey ">
-                  {products.description}
+                  {product.description}
                 </p>
               </div>
             </div>

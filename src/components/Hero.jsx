@@ -15,7 +15,7 @@ const Hero = () => {
             </div>
             {/* hero text */}
             <div className="md:w-1/2 mx-11 md:ml-20 ">
-              <h1 className="lg:text-[4rem] sm:text-[2rem]  font-semibold mb-4 text-neutralDGrey  leading-snug ">
+              <h1 className="lg:text-6xl sm:text-[2rem]  font-semibold mb-4 text-neutralDGrey  leading-snug ">
                 Gestión Empresarial: tu solución
                 <span className="text-brandPrimary leading-snug">
                   {" "}
